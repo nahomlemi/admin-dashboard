@@ -1,3 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
 :root{
-    background:black;
+    border:0;
+    background:gainsboro;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows:repeat(6, 1fr);
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    padding:30px;
+    background:ghostwhite;
+    grid-column: 2/7;
+}
+input{
+    width:60%;
+    font-size:22px;
+    padding:10px;
+    border-radius:30px;
+    border:0;
+    background:lightskyblue;
+}
+.header svg{
+    width:40px;
+
+}
+
+.dashboard{
+    padding:100px;
+    color:white;
+    background:dodgerblue;
+    grid-column: 1/2;
+    grid-row: 1/7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body{
+    padding:100px;
+    background:gainsboro;
+    grid-column:2/6;
+    grid-row: 2/7;
+}
+.body p{
+    font-size:23px;
+    font-weight:700;
+}
+
+
+.projects{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 520px);
+}
+.projects div{
+    padding:50px;
+    background:linear-gradient(
+        to right,
+        goldenrod 0%,
+        goldenrod 5%,
+        ghostwhite 5%,
+        ghostwhite 100%)
+        ;
+    margin:1rem;
+    border-radius:20px;
+} 
+.projects div p{
+    font-size:12px;
+    color:dimgray;
+}
+
+
+.announcements{
+    padding:40px 5px;
+    background:gainsboro;
+    grid-row: 2/4;
+}
+.announcements div{
+    background:ghostwhite;
+    padding:10px;
+    border-radius: 30px;
+    margin-top: 1rem;
+}
+.announcements div div{
+    padding:10 10px;    
+}
+.announcements div div p{
+    font-size: 12px;
+    color:dimgray;
+}
+
+.trending{
+    padding:40px 5px;
+    grid-row:4/7;
+    margin-right:10px;
+}
+.trending .trending_list{
+    background:ghostwhite;
+    padding:20px 20px;
+    border-radius:30px;
+    margin-top:1rem;
+}
+.trending .trending_list div{
+    padding:5px 0;
+}
+.trending .trending_list p{
+    color:dimgray;
+}
+img{
+    width:50px;
+    border-radius: 20px;
+    margin:10px;
+}
+.trending_list div{
+    display:flex;
+    align-items: space-around;
+}
+.trending_list div div{
+    display:flex;
+    flex-direction:column;
 }
