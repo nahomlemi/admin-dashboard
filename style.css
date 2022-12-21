@@ -18,10 +18,29 @@
 
 .header{
     display:flex;
-    align-items: center;
-    padding:30px;
+    flex-direction:column;
+    padding:20px;
     background:ghostwhite;
     grid-column: 2/7;
+}
+.header .top{
+    display:flex;
+    align-items:center;
+}
+.header .bottom{
+    display:flex;
+    justify-content:end;
+}
+.header .bottom button{
+    padding:15px 40px;
+    margin-top:50px;
+    margin-left:30px;
+    border:0;
+    border-radius:40px;
+    background:dodgerblue;
+    color:white;
+    font-size:15px;
+    font-weight:1000px;
 }
 input{
     width:60%;
@@ -31,9 +50,8 @@ input{
     border:0;
     background:lightskyblue;
 }
-.header svg{
+.header div svg{
     width:40px;
-
 }
 
 .dashboard{
