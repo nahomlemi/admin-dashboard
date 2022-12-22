@@ -72,16 +72,22 @@ input{
 }
 
 .dashboard{
-    padding:100px;
+    padding:50px;
     color:white;
     background:dodgerblue;
     grid-column: 1/2;
     grid-row: 1/7;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.list div{
+    display:flex;
+    align-items: center;
+}
+.list_svg{
+    width:20px;
+}
 .body{
-    padding:100px;
+    padding:40px 0px 0px 40px;
     background:gainsboro;
     grid-column:2/6;
     grid-row: 2/7;
@@ -112,10 +118,16 @@ input{
     font-size:12px;
     color:dimgray;
 }
-
+.svg_1, .svg_2{
+    width:22px;
+    margin-bottom:-20px;
+}
+.svg_1{
+    margin-left:300px;
+}
 
 .announcements{
-    padding:40px 5px;
+    padding:40px 20px 0px 0px;
     background:gainsboro;
     grid-row: 2/4;
 }
@@ -126,7 +138,7 @@ input{
     margin-top: 1rem;
 }
 .announcements div div{
-    padding:10 10px;    
+    padding:10px;    
 }
 .announcements div div p{
     font-size: 12px;
@@ -134,7 +146,7 @@ input{
 }
 
 .trending{
-    padding:40px 5px;
+    padding:0px 10px 0px 0px;
     grid-row:4/7;
 }
 .trending .trending_list{
@@ -162,3 +174,7 @@ img{
     display:flex;
     flex-direction:column;
 }
+
+
+
+
